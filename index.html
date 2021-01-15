@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MakeMIT 2020</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="MakeMIT is a hardware hackathon held at MIT (Massachusetts Institute of Technology). Applications open on December 1st, 2019 (12/1/2019)" />
+    <meta name="author" content="Prem Chintalapudi" />
+    <meta name="creator" content="MakeMIT" />
+    <meta name="creator" content="TechX" />
+    <meta name="creator" content="DevOps" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revised" content="Wednesday, October 11, 2019, 12:00 pm" />
+    <meta name="copyright" content="MakeMIT DevOps 2019-20" />
+    <meta name="url" content="https://makemit.org" />
+    <meta name="og:title" content="MakeMIT 2021" />
+    <meta name="og:type" content="website" />
+    <meta name="og:description"
+        content="MakeMIT is a hardware hackathon held at MIT (Massachusetts Institute of Technology). Applications open on December 1st, 2019 (12/1/2019)" />
+    <meta name="og:site_name" content="MakeMIT" />
+    <meta name="og:url" content="https://makemit.org" />
+    <meta name="og:email" content="team@makemit.org" />
+    <meta name="og:locale" content="en_US" />
+    <meta name="twitter:title" content="MakeMIT 2021" />
+    <meta name="twitter:description"
+        content="MakeMIT is a hardware hackathon held at MIT (Massachusetts Institute of Technology). Applications open on December 1st, 2019 (12/1/2019)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="<%=require('./static/images/png/logos/make_logo.png')%>" rel="shortcut icon" type="image/x-icon">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:400" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600" />
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:700" as="style" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css"/>
+    <link rel='stylesheet' href="static/css/style.css" />
+    <script>if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform) || navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+            navigator.userAgent && navigator.userAgent.indexOf('CriOS') == -1 && navigator.userAgent.indexOf('FxiOS') == -1) document.documentElement.classList.add('ios')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <div nav-bar>
+            <header>
+                <img class="logo" src="<%=require('./static/images/svg/Assets/make_icon.svg')%>" alt="logo">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="https://makemit2019.devpost.com/submissions" target="_blank" rel="noopener noreferrer">Past
+                            Projects</a></li>
+                        <li><a href="#dayof">Schedule</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="https://my.makemit.org">Apply</a>
+                <p class="menu cta">Menu</p>
+            </header>
+            <div id="mobile__menu" class="overlay">
+                <a class="close">&times;</a>
+                <div class="overlay__content">
+                    <a href="#about">About</a>
+                    <a href="https://makemit2019.devpost.com/submissions" target="_blank" rel="noopener noreferrer">Past
+                        Projects</a>
+                    <a href="#dayof">Schedule</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#sponsors">Sponsors</a>
+                    <a href="#footer">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <article makemit-header style='color:#76B5EB'>
+            <h1 class="heading" style="height:80%"> 
+                <div class="makemit"><p>Make</p><p style="color:#FEE637">MIT</p></div><p class="techx">Powered by TechX</p>
+            </h1>
+            <div class="room">
+                <div class="belt">
+                <div class="conveyor">
+                    <span class="specialflower" id="flower1">
+                        <div icon class="icon"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="<%=require('./static/images/svg/Assets/facebook.svg')%>" alt="Facebook"></a></div>
+                        <div id="box" onmouseover="hoverIcon()" onmouseout="normalIcon()">
+                            <div class="box01"></div>
+                            <div class="box02"></div>
+                            <div class="box03"></div>
+                            <div class="box04"></div>
+                            <div class="box05"></div>
+                            <div class="box06"></div>
+                            <div class="box07"></div>
+                        </div>
+                        <img class="pot" style="height:140px;top:70px;left:37px" src="<%=require('./static/images/svg/Assets/pot.svg')%>" alt="Pot">
+                    </span>
+                    <span class="specialflower" id="flower2">
+                        <div icon class="icon"><a href="https://www.instagram.com/make_mit/?hl=en" target="_blank" rel="noopener noreferrer"><img src="<%=require('./static/images/svg/Assets/instagram.svg')%>" alt="Instagram"></a></div>
+                        <div id="box">
+                            <div class="box01"></div>
+                            <div class="box02"></div>
+                            <div class="box03"></div>
+                            <div class="box04"></div>
+                            <div class="box05"></div>
+                            <div class="box06"></div>
+                            <div class="box07"></div>
+                        </div>
+                        <img class="pot" style="height:140px;top:70px;left:37px" src="<%=require('./static/images/svg/Assets/pot.svg')%>" alt="Pot">
+                    </span>
+                    <span class="specialflower" id="flower3">
+                        <div icon class="icon"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><img src="<%=require('./static/images/svg/Assets/linkedin.svg')%>" alt="LinkedIn"></a></div>
+                        <div id="box">
+                            <div class="box01"></div>
+                            <div class="box02"></div>
+                            <div class="box03"></div>
+                            <div class="box04"></div>
+                            <div class="box05"></div>
+                            <div class="box06"></div>
+                            <div class="box07"></div>
+                        </div>
+                        <img class="pot" style="height:140px;top:70px;left:37px" src="<%=require('./static/images/svg/Assets/pot.svg')%>" alt="Pot">
+                    </span>
+                    <span class="specialflower" id="flower4">
+                        <div icon class="icon"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><img src="<%=require('./static/images/svg/Assets/email.svg')%>" alt="Gmail"></a></div>
+                        <div id="box">
+                            <div class="box01"></div>
+                            <div class="box02"></div>
+                            <div class="box03"></div>
+                            <div class="box04"></div>
+                            <div class="box05"></div>
+                            <div class="box06"></div>
+                            <div class="box07"></div>
+                        </div>
+                        <img class="pot" style="height:140px;top:70px;left:37px" src="<%=require('./static/images/svg/Assets/pot.svg')%>" alt="Pot">
+                    </span>
+                </div>
+                </div>
+                <div style="position: absolute; top: 180px;">
+                    <div class="machine">
+                    <div class="blt">  
+                        <div class="TheseAreTheBreaks"></div>
+                        <div class="TheseAreTheBreaks_Again"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="about" about-section>
+            <div>
+                <img src="<%=require('./static/images/svg/Assets/about_icon.svg')%>" alt="" tool-01>
+                <h2>About</h2>
+                <p about-text>MakeMIT is a hardware hackathon that allows undergraduates to showcase their innovative spirit
+                    through large-scale projects, ranging from a driver-exhaustion moniter, to a toaster that prints
+                    your morning news. Our fast-paced structure produces an atmosphere of creativity and collaboration
+                    as makers work in teams of up to five to create their product. MakeMIT provides cutting edge
+                    technology, tools, materials, and mentorship, empowering students to turn their crazy ideas into
+                    reality.
+                </p>
+                <p><a href="https://makemit2019.devpost.com/submissions" target="_blank" rel="noopener noreferrer">Past Projects</a></p>
+            </div>
+            <div>
+                <img src="<%=require('./static/images/svg/Assets/gear03.svg')%>" alt="" makemit-gear-001>
+            </div>
+        </article>
+        <!-- <div makemit-gears>
+            <img src="<%=require('./static/images/svg/Assets/gear04.svg')%>" alt="" makemit-gear-04>
+            <img src="<%=require('./static/images/svg/Assets/gear05.svg')%>" alt="" makemit-gear-05>
+            <img src="<%=require('./static/images/svg/Assets/gear06.svg')%>" alt="" makemit-gear-06>
+        </div> -->
+        <article id="dayof" schedule-section>
+            <div>
+                <img src="<%=require('./static/images/svg/Assets/gear01.svg')%>" alt="" makemit-gear-002>
+            </div>
+            <div>
+                <img src="<%=require('./static/images/svg/Assets/faq_icon.svg')%>" alt="" tool-02>
+                <h2>Schedule</h2>
+                <p>Stay tuned—coming soon!</p>
+            </div>
+        </article>
+        <!-- <div makemit-gears> -->
+            <!-- <img src="<%=require('./static/images/svg/Assets/gear07.svg')%>" alt="" makemit-gear-07>
+            <img src="<%=require('./static/images/svg/Assets/gear08.svg')%>" alt="" makemit-gear-08>
+        </div> -->
+        <article id="faq" faq-section>
+            <div>
+                <img src="<%=require('./static/images/svg/Assets/schedule_icon.svg')%>" alt="" tool-03>
+                <h2>FAQ</h2>
+                <inner_div class="container">
+                    <inner_div class="accordion">
+                      <dl>
+                        <dt>
+                        <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">
+                            &#9662; When is MakeMIT?
+                        </a>
+                        </dt>
+                        <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
+                        <p>This year, we will be extending MakeMIT over 2 weeks (March 6-21) in order to facilitate our new virtual medium. These weeks will be split into both a design and build phase, with participants having time to order their materials somewhere in the middle. Additionally, before the main event, we are dedicating a full week to tech talks, workshops, and demos, which are open to participants and the entire MIT community. 
+
+                        </p>
+                        </dd>
+                        <dt>
+                            <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+                            &#9662; How is MakeMIT going to work these year since it is virtual?</a>
+                        </dt>
+                        <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                            <p>Every Maker will submit project proposals and we will choose finalists who will be able to ask for some materials to fulfill their project. Finally, we will judge the creations and announce a winner!</p>
+                        </dd>
+                        <dt>
+                          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                            &#9662; Who can participate?
+                          </a>
+                        </dt>
+                        <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                          <p>All undergraduate students are welcome. While we aren’t accepting graduate students as makers, we would love to have graduate students as event volunteers! Contact us to get involved. </p>
+                        </dd>
+                        <dt>
+                          <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">&#9662; What do I need? </a>
+                        </dt>
+                        <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                          <p>Other than your own creativity and enthusiasm, nothing is absolutely necessary. Building materials will be covered by MakeMIT after the design phase. Just come with some cool ideas and a readiness to learn.</p>
+                        </dd>
+                        <dt>
+                        <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
+                            &#9662; How can I access materials or tools to build?
+                        </a>
+                        </dt>
+                        <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+                        <p> There are many options. Firstly, Make MIT will subsidize up to $500 worth of purchased tools and materials that are bought during MakeWeek. You are also free to use any personal tools you currently have access to. Unfortunately, since everything is virtual, you can't be making and inventing in person, but we'll make sure you can do it from where you are!</p>
+                        </dd>
+                        <dt>
+                        <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
+                            &#9662; What if I am a complete beginner?
+                        </a>
+                        </dt>
+                        <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+                        <p> There will be time to plan out your project (design phase) and for execution we plan on providing office hours for you to ask questions and us to guide during the build phase.</p>
+                        </dd>
+                      </dl>
+                    </inner_div>
+                </inner_div>
+            </div>
+            <div style="height:100%;">
+                <gears makemit-gears style="right:-3vh;top:-25vh;margin-left:300px;">
+                    <img style="width:40vh;height:auto" src="<%=require('./static/images/svg/Assets/gear02.svg')%>" alt="" makemit-gear-02>
+                    <img style="width:50vh;height:auto;right:-6vh;top:80vh;--direction:-1.55" src="<%=require('./static/images/svg/Assets/gear12.svg')%>" alt="" makemit-gear-03>
+                </gears>
+                <!-- <gear makemit-gears style="top:50px">
+                    <img style="display:none"  src="<%=require('./static/images/svg/Assets/gear02.svg')%>" alt="" makemit-gear-003>
+                    <img style="display:none"  src="<%=require('./static/images/svg/Assets/gear03.svg')%>" alt="" makemit-gear-004>
+                </gear> -->
+            </div>
+        </article>
+        <article id="sponsors" makemit-sponsors style="background-color:#F8F8FF" sponsors-section>
+            <img makemit-src="<%=require('./static/images/svg/Assets/sponsors_logo.svg')%>" alt="" tool-04>
+            <h2>Sponsors</h2>
+            <div class="grid-container" makemit-platinum style="margin-left: 40px; margin-right: 40px;">
+                <div class="grid-item" makemit-platinum>
+                    <a makemit-sponsor="Infosys" href="https://www.infosys.com/"
+                    rel="noopener noreferrer nofollow">
+                        <img style="margin-top:10px; height:70px; width:170px;" makemit-src="<%=require('./static/images/png/logos/PLAT_Infosys.png')%>"
+                        alt="Infi\osys - MakeMIT Platinum Sponsor">
+                    </a>
+                </div>
+            </div>
+            <div class="grid-container" makemit-silver style="margin-left: 40px; margin-right: 40px;">
+                <div class="grid-item" makemit-silver>
+                    <a makemit-sponsor="Verizon" href="https://www.verizonwireless.com/"
+                    rel="noopener noreferrer nofollow">
+                        <img style="margin-top:10px; height:40px; width:170px;" makemit-src="<%=require('./static/images/png/logos/GOLD_Verizon.png')%>"
+                        alt="Verizon - MakeMIT Silver Sponsor">
+                    </a>
+                </div>
+                <div class="grid-item" makemit-silver>
+                    <a makemit-sponsor="MIT EECS" href="https://www.eecs.mit.edu/"
+                    rel="noopener noreferrer nofollow">
+                        <img style="margin-top:10px; height:40px; width:170px;" makemit-src="<%=require('./static/images/png/logos/BRONZE_MIT_EECS.png')%>"
+                        alt="MIT EECS - MakeMIT Silver Sponsor">
+                    </a>
+                </div>
+                <div class="grid-item" makemit-silver>
+                    <a makemit-sponsor="Thorlabs" href="https://www.thorlabs.com/"
+                    rel="noopener noreferrer nofollow">
+                        <img style="margin-top:10px; height:40px; width:170px;" makemit-src="<%=require('./static/images/png/logos/SILVER_Thorlabs.jpg')%>"
+                        alt="Thorlabs - MakeMIT Silver Sponsor">
+                    </a>
+                </div>
+                <div class="grid-item" makemit-silver>
+                    <a makemit-sponsor="Shell" href="https://www.shell.com/"
+                    rel="noopener noreferrer nofollow">
+                        <img style="margin-top:10px; height:70px; width:100px;" makemit-src="<%=require('./static/images/png/logos/GOLD_Shell.png')%>"
+                        alt="Shell - MakeMIT Silver Sponsor">
+                    </a>
+                </div>
+            </div>
+            <div class="grid-container" makemit-bronze style="margin-left: 40px; margin-right: 40px;">
+                <div class="grid-item">
+                    <a makemit-sponsor="Lemelson MIT" href="https://lemelson.mit.edu/" rel="noopener noreferrer nofollow">
+                        <img style="margin-top:30px; height:25px; width:170px;" makemit-src="<%=require('./static/images/png/logos/BRONZE_LemelsonMIT.png')%>"
+                        alt="Lemelson MIT - MakeMIT Bronze Sponsor"></a>
+                </div>
+                <div class="grid-item" makemit-bronze>
+                    <a makemit-sponsor="Lincoln Labs" href="https://www.ll.mit.edu/" rel="noopener noreferrer nofollow">
+                        <img style="margin-top:6px; height:90px; width:80px;" makemit-src="<%=require('./static/images/png/logos/BRONZE_Lincoln_Labs.png')%>"
+                        alt="Lincoln Labs - MakeMIT Bronze Sponsor">
+                    </a>
+                </div>
+                <div class="grid-item" makemit-bronze>
+                    <a makemit-sponsor="Mouser Electronics" href="https://www.mouser.com/">
+                        <img style="margin-top:10px; height:70px; width:170px;" makemit-src="<%=require('./static/images/png/logos/BRONZE_Mouser_Electronics.png')%>"
+                        alt="Mouser Electronics - MakeMIT Bronze Sponsor">
+                    </a>
+                </div>
+            </div>
+        </article>
+        <div id="footer" makemit-footer>
+            <section>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="<%=require('./static/images/svg/Assets/facebook.svg')%>" alt="Facebook"></a>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><img src="<%=require('./static/images/svg/Assets/instagram.svg')%>" alt="Instagram"></a>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><img src="<%=require('./static/images/svg/Assets/linkedin.svg')%>" alt="LinkedIn"></a>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><img src="<%=require('./static/images/svg/Assets/email.svg')%>" alt="Gmail"></a>
+            </section>
+            <!-- <div makemit-gears>
+                <img src="<%=require('./static/images/svg/Assets/gear10.svg')%>" alt="" makemit-gear-10>
+                <img src="<%=require('./static/images/svg/Assets/gear11.svg')%>" alt="" makemit-gear-11>
+            </div> -->
+        </div>
+    </main>
+    <script>
+        var func = function(){
+            var d = document,
+            accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+            setAria,
+            setAccordionAria,
+            switchAccordion,
+            touchSupported = ('ontouchstart' in window),
+            pointerSupported = ('pointerdown' in window);
+
+            skipClickDelay = function(e){
+                e.preventDefault();
+                e.target.click();
+            }
+
+            setAriaAttr = function(el, ariaType, newProperty){
+                el.setAttribute(ariaType, newProperty);
+            };
+            setAccordionAria = function(el1, el2, expanded){
+                switch(expanded) {
+                case "true":
+                    setAriaAttr(el1, 'aria-expanded', 'true');
+                    setAriaAttr(el2, 'aria-hidden', 'false');
+                    break;
+                case "false":
+                    setAriaAttr(el1, 'aria-expanded', 'false');
+                    setAriaAttr(el2, 'aria-hidden', 'true');
+                    break;
+                default:
+                            break;
+                }
+            };
+        //function
+        switchAccordion = function(e) {
+        console.log("triggered");
+            e.preventDefault();
+            var thisAnswer = e.target.parentNode.nextElementSibling;
+            var thisQuestion = e.target;
+            if(thisAnswer.classList.contains('is-collapsed')) {
+                setAccordionAria(thisQuestion, thisAnswer, 'true');
+            } else {
+                setAccordionAria(thisQuestion, thisAnswer, 'false');
+            }
+            thisQuestion.classList.toggle('is-collapsed');
+            thisQuestion.classList.toggle('is-expanded');
+                thisAnswer.classList.toggle('is-collapsed');
+                thisAnswer.classList.toggle('is-expanded');
+            
+            thisAnswer.classList.toggle('animateIn');
+            };
+            for (var i=0,len=accordionToggles.length; i<len; i++) {
+                if(touchSupported) {
+            accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+            }
+            if(pointerSupported){
+            accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+            }
+            accordionToggles[i].addEventListener('click', switchAccordion, false);
+        }
+        };
+        func();
+        const doc = document;
+        const menuOpen = doc.querySelector(".menu");
+        const menuClose = doc.querySelector(".close");
+        const overlay = doc.querySelector(".overlay");
+
+        menuOpen.addEventListener("click", () => {
+        overlay.classList.add("overlay--active");
+        });
+
+        menuClose.addEventListener("click", () => {
+        overlay.classList.remove("overlay--active");
+        });
+
+
+        let flower1 = document.getElementById("flower1");
+        let flower2 = document.getElementById("flower2");
+        let flower3 = document.getElementById("flower3");
+        let flower4 = document.getElementById("flower4");
+        let flowers = [flower1, flower2, flower3, flower4];
+
+        flower1.onmouseover = function() {
+            flowers.forEach(bloom);
+        };
+
+        flower1.onmouseout = function() {
+            flowers.forEach(close);
+        };
+
+        flower2.onmouseover = function() {
+            flowers.forEach(bloom);
+        };
+
+        flower2.onmouseout = function() {
+            flowers.forEach(close);
+        };
+
+        flower3.onmouseover = function() {
+            flowers.forEach(bloom);
+        };
+
+        flower3.onmouseout = function() {
+            flowers.forEach(close);
+        };
+
+        flower4.onmouseover = function() {
+            flowers.forEach(bloom);
+        };
+
+        flower4.onmouseout = function() {
+            flowers.forEach(close);
+        };
+
+        function bloom(value, index, array) {
+            var icons = document.getElementsByClassName("icon");
+            for (var i = 0; i < icons.length; i++) {
+                icons[i].style.opacity = "100%";
+                icons[i].style.transition = '1s';
+            }
+
+            var petals = value.getElementsByClassName("box02");
+            for (var i = 0; i < petals.length; i++) {
+                petals[i].style.background = "yellow";
+                petals[i].style.transform = "rotate(-23deg)";
+            }
+            var petals = value.getElementsByClassName("box03");
+            for (var i = 0; i < petals.length; i++) {
+                petals[i].style.background = "pink";
+                petals[i].style.transform = "rotate(0deg)";
+            }
+            var petals = value.getElementsByClassName("box04");
+            for (var i = 0; i < petals.length; i++) {
+                petals[i].style.background = "purple";
+                petals[i].style.transform = "rotate(-68deg)";
+            }
+            var petals = value.getElementsByClassName("box05");
+            for (var i = 0; i < petals.length; i++) {
+                petals[i].style.background = "red";
+                petals[i].style.transform = "rotate(-90deg)";
+            }
+        };
+
+        function close(value, index, array) {
+            var icons = document.getElementsByClassName("icon")
+            for (var i = 0; i < icons.length; i++) {
+                icons[i].style.opacity = "0%";
+            }
+
+            var petals = value.getElementsByClassName("box02");
+            for (var i = 0; i < petals.length; i++) {
+                petals[i].style.background = "#539D34";
+                petals[i].style.transform = "rotate(-45deg)";
+            }
+            var petals = value.getElementsByClassName("box03");
+            for (var i = 0; i < petals.length; i++) {
+                petals[i].style.background = "#539D34";
+                petals[i].style.transform = "rotate(-45deg)";
+            }
+            var petals = value.getElementsByClassName("box04");
+            for (var i = 0; i < petals.length; i++) {
+                petals[i].style.background = "#539D34";
+                petals[i].style.transform = "rotate(-45deg)";
+            }
+            var petals = value.getElementsByClassName("box05");
+            for (var i = 0; i < petals.length; i++) {
+                petals[i].style.background = "#539D34";
+                petals[i].style.transform = "rotate(-45deg)";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
